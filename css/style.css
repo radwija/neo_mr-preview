@@ -1,9 +1,26 @@
 body {
   margin: 0;
+  background-color: black;
 }
 
 img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.mobile-page {
+  max-width: 100%;
+  /* default untuk mobile */
+}
+
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+  .mobile-page {
+    max-width: 430px;
+    /* kira-kira lebar layar iPhone 16 Pro Max */
+    margin: 0 auto;
+    /* biar center di layar besar */
+    display: block;
+  }
 }
